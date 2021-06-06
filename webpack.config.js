@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
-    assetModuleFilename: 'assets/img/[hash:8][ext][query]',
+    assetModuleFilename: 'assets/img/[hash:8][ext]',
   },
   module: {
     rules: [
@@ -63,5 +63,12 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html"
     }),
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    host: '0.0.0.0',
+    port: 9000,
+    disableHostCheck: true,
+  },
 };
