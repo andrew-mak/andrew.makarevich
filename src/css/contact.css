@@ -34,6 +34,7 @@
   margin: 1.2rem auto;
 }
 .contact-form {
+  margin: auto;
   padding: 1rem 0;
 }
 .contact-form input[type="text"],
@@ -57,14 +58,16 @@
 }
 
 .btn {
-  border: 2px solid #000;
-  border-radius: 25px;
+  width: 200px;
   display: block;
   margin: 1rem auto;
-  font-size: 0.9rem;
+  padding: 1rem 0;
+  border: 2px solid #000;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  word-spacing: 2px;
   text-transform: uppercase;
-  padding: 0.6rem 0;
-  width: 180px;
   transition: all 0.5s ease-in-out;
 }
 .btn:hover {

@@ -77,6 +77,18 @@ body {
   margin: 0.4rem auto 0.6rem auto;
 }
 
+.social-links li {
+  margin: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: var(--transition);
+}
+
+.social-links li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -128,6 +140,7 @@ button {
 @media screen and (min-width: 600px) {
   #typeEffect {
     font-size: 5rem;
+    min-height: 240px;
   }
   .tech .item {
     min-width: 220px;
@@ -139,6 +152,14 @@ button {
   .portfolio .item {
     width: 56%;
     margin: 2rem 1rem;
+  }
+
+  .about .col-left img {
+    width: 50%;
+  }
+
+  .contact-form {
+    width: 70%;
   }
 }
 
@@ -203,6 +224,10 @@ button {
     align-items: center;
   }
 
+  .about .col-left img {
+    width: 75%;
+  }
+
   .about .col-right h2 {
     padding-top: 0;
   }
@@ -221,7 +246,7 @@ button {
     margin-bottom: 10px;
   }
 
-.portfolio .item {
+  .portfolio .item {
     width: 30%;
     max-width: 400px;
   }

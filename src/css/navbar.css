@@ -74,6 +74,7 @@
 }
 
 #typeEffect {
+  min-height: 144px;
   font-size: 3rem;
   font-family: var(--largeFont);
   font-weight: 900;
@@ -82,18 +83,6 @@
 
 .social-links {
   display: flex;
-}
-
-.social-links li {
-  margin: 1rem;
-  font-size: 1.4rem;
-  color: #fff;
-  transition: var(--transition);
-}
-
-.social-links li:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }
 
 .down-arrow {

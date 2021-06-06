@@ -2,6 +2,22 @@
   margin-bottom: 4rem;
 }
 
+.about .col-left img {
+  width: 90%;
+  margin: auto;
+  max-width: 450px;
+  padding: 7px;
+  padding-bottom: 0;
+  padding-right: 0;
+  box-shadow: -48px -48px 0 -40px var(--darkCharcoal), 48px 48px 0 -40px #00aeff;
+}
+
+.about .col-left img:hover {
+  padding: 0px;
+  padding-bottom: 7px;
+  padding-right: 7px;
+}
+
 .about .col-right h2 {
   padding: 2rem 0 0 0;
   font-size: 1.8rem;
