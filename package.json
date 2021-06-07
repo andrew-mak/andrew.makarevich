@@ -18,8 +18,8 @@
     "webpack-merge": "^5.7.3"
   },
   "scripts": {
-    "build": "webpack",
-    "serve": "webpack serve",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
