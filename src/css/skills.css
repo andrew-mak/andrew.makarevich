@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
-  background: var(--whiteSmoke);
+  background: var(--lightBackg);
 }
 
 .tech .item {
@@ -40,11 +40,11 @@
 
 .tech .item h3:hover {
   cursor: default;
-  text-shadow: 1px 1px 4px #00aeff;
+  text-shadow: 1px 1px 4px var(--brandColor);
 }
 
 .skills .row.two {
-  background: var(--whiteSmoke);
+  background: var(--lightBackg);
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
