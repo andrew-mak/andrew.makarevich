@@ -153,7 +153,8 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .portfolio .item {
+
+  .portfolio .project {
     width: 56%;
     margin: 2rem 1rem;
   }
@@ -202,7 +203,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .portfolio .item {
+  .portfolio .project {
     width: 40%;
   }
 
@@ -248,7 +249,7 @@ button {
     margin-bottom: 10px;
   }
 
-  .portfolio .item {
+   .portfolio .project {
     width: 30%;
     max-width: 400px;
   }
