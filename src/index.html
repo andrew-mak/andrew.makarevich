@@ -11,6 +11,44 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
+  <style type="text/css">
+    .preloader {
+      position: absolute;
+      background: #fff;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 120vh;
+    }
+
+    .loader {
+      position: absolute;
+      left: calc(50% - 30px);
+      top: 30%;
+      width: 80px;
+      height: 80px;
+      border: 10px solid #00aeff;
+      border-radius: 50%;
+      border-top: 10px solid #333;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script defer>window.addEventListener('load', () => {
+      document.querySelector('.preloader').classList.add("hidePreloader");
+      document.body.style.overflow = "visible";
+    });
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />

@@ -34,29 +34,6 @@ body {
   overflow: hidden;
 }
 
-.preloader {
-  position: absolute;
-  background: #fff;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.loader {
-  position: absolute;
-  left: calc(50% - 30px);
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  border: 6px solid var(--lightBackg);
-  border-radius: 50%;
-  border-top: 6px solid var(--darkCharcoal);
-  animation: spin 1s linear infinite;
-}
-
 .title {
   text-align: center;
   padding: 0.5rem 0 1.8rem 0;
@@ -91,15 +68,6 @@ body {
 .social-links li:hover {
   opacity: 0.7;
   cursor: pointer;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .hidePreloader {
@@ -249,7 +217,7 @@ button {
     margin-bottom: 10px;
   }
 
-   .portfolio .project {
+  .portfolio .project {
     width: 30%;
     max-width: 400px;
   }
