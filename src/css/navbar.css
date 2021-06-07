@@ -1,0 +1,97 @@
+.navbar {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 2px 8px var(--brandColor);
+  display: none;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 42px;
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  word-spacing: 7px;
+}
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--lightBackg);
+  transition: var(--transition);
+}
+.navbar-toggler:hover {
+  opacity: 0.9;
+  color: var(--brandColor);
+}
+.navbar-collapse {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.navbar-nav {
+  text-align: center;
+}
+.nav-item {
+  padding: 12px 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.nav-link:hover {
+  color: var(--brandColor);
+}
+.toggleNav {
+  padding: 1rem 0;
+  height: 286px;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/img/banner-img.jpg) center/cover no-repeat fixed;
+  height: 100vh;
+}
+
+.header .row {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  text-align: center;
+}
+
+#typeEffect {
+  min-height: 144px;
+  font-size: 3rem;
+  font-family: var(--largeFont);
+  font-weight: 900;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+}
+
+.down-arrow {
+  margin-top: 2.8rem;
+  animation-name: arrowMovement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: var(--transition);
+}
+
+.down-arrow a {
+  color: #fff;
+  font-size: 2rem;
+}

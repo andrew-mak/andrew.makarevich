@@ -6,7 +6,9 @@ build/Release
 
 # Dependency directories
 node_modules/
-dist/
+public/assets
 
 # Optional eslint cache
 .eslintcache
+
+package-lock.json

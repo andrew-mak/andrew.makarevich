@@ -2,24 +2,19 @@ import Typewriter from 'typewriter-effect/dist/core';
 const progressValues = [80, 60, 80, 70, 50, 40];
 const progressColor = '#00eaff';
 
-window.addEventListener('load', (event) => {
-  console.log('load\n');
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
+window.addEventListener('load', () => {
   document.querySelector('.preloader').classList.add("hidePreloader");
-  // document.querySelector('.preloader').style.display = "none";
   document.body.style.overflow = "visible";
 });
 
-document.addEventListener('readystatechange', (event) => {
-  // console.log(`readystate: ${document.readyState}\n`);
-  // document.body.style.overflow = "visisble";
-});
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  console.log(`DOMContentLoaded\n`);
+document.addEventListener('DOMContentLoaded', () => {
   document.body.style.overflow = "visisble";
-
-  // document.getElementByClassName('preloader').style.display = "none";
-
 });
 
 const navBtn = document.querySelector('.navbar-toggler');
@@ -58,7 +53,7 @@ setInterval(() => {
 
 const setProgressWdth = (progressItems, values, BGColor) => {
   progressItems.forEach((item, i) => {
-    item.firstElementChild.style.width = values[i]+'%';
+    item.firstElementChild.style.width = values[i] + '%';
     item.firstElementChild.style.transition = 'width 3s linear';
     item.firstElementChild.style.background = BGColor;
 
