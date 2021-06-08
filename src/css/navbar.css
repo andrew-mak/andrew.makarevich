@@ -62,7 +62,6 @@
     url(../assets/img/banner-img.jpg) center/cover no-repeat fixed;
   height: 100vh;
 }
-
 .header .row {
   height: 100%;
   display: grid;
@@ -71,12 +70,22 @@
   text-align: center;
 }
 
-#typeEffect {
-  min-height: 144px;
+p.greeting-text {
+  animation: show-greeting 2s ease-in;
+}
+
+.greeting-text {
+  word-spacing: 1rem;
   font-size: 3rem;
-  font-family: var(--largeFont);
-  font-weight: 900;
+  font-weight: 500;
   color: #fff;
+  text-shadow: 0 0 15px #525251, 0 0 10px #525251;
+}
+
+.greeting-text#typeEffect {
+  min-height: 144px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .social-links {
@@ -94,4 +103,14 @@
 .down-arrow a {
   color: #fff;
   font-size: 2rem;
+}
+
+@keyframes show-greeting {
+  0% {
+    color: transparent;
+    font-size: 2px;
+  }
+  100% {
+    color: #fff;
+  }
 }

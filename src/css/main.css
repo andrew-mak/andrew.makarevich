@@ -110,8 +110,10 @@ button {
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
-  #typeEffect {
+  .greeting-text {
     font-size: 5rem;
+  }
+  .greeting-text#typeEffect {
     min-height: 240px;
   }
   .tech .item {

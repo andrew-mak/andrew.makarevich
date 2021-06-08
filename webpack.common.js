@@ -16,12 +16,6 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      // {
-      // use as alternative to MiniCssExtractPlugin & CssMinimizerPlugin--prod
-      // output inside one bundle with js
-      //   test: /\.css$/i,
-      //   use: ['style-loader', 'css-loader'],
-      // },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],

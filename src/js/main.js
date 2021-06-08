@@ -18,6 +18,7 @@ const typewriter = new Typewriter('#typeEffect', {
 });
 
 typewriter
+  .pauseFor(2300)
   .typeString('I\'m Andrew Makarevich')
   .pauseFor(2500)
   .deleteAll()

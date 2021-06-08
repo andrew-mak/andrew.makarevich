@@ -12,7 +12,6 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       `...`,
-      // use with MiniCssExtractPlugin
       new CssMinimizerPlugin(),
     ]
   }
