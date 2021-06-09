@@ -4,7 +4,7 @@
 @import "portfolio.css";
 @import "about.css";
 @import "skills.css";
-@import "contact.css";
+@import "contacts.css";
 @import "footer.css";
 
 :root {
@@ -133,6 +133,10 @@ button {
     width: 50%;
   }
 
+  .contacts .item:first-of-type {
+    min-width: 9rem;
+  }
+
   .contact-form {
     width: 70%;
   }
@@ -148,12 +152,12 @@ button {
     display: none;
   }
 
-  .navbar-collapse {
+  .navbar-items {
     height: 100%;
     flex: 1 0 auto;
   }
 
-  .navbar-nav {
+  .navbar-ul {
     display: flex;
     justify-content: flex-end;
   }
@@ -180,12 +184,6 @@ button {
   .skills .row.two .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
   }
 }
 
@@ -224,7 +222,7 @@ button {
     max-width: 400px;
   }
 
-  .contact-wrapper {
+  .contacts {
     width: 60%;
   }
   .contact-form div {

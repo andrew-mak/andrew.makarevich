@@ -32,12 +32,12 @@
   opacity: 0.9;
   color: var(--brandColor);
 }
-.navbar-collapse {
+.navbar-items {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
-.navbar-nav {
+.navbar-ul {
   text-align: center;
 }
 .nav-item {
