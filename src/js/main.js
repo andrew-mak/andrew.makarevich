@@ -10,6 +10,7 @@ typewriter
   .pauseFor(2500)
   .deleteAll()
   .typeString('I\'m Frontend Developer')
+  .pauseFor(2000)
   .start();
 
 const submitBtn = document.getElementById('submitBtn');

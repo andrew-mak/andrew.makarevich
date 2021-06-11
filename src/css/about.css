@@ -9,14 +9,16 @@
   padding: 7px;
   padding-bottom: 0;
   padding-right: 0;
-  box-shadow: -48px -48px 0 -40px var(--darkCharcoal), 48px 48px 10px -40px var(--brandColor);
+  box-shadow: -48px -48px 0 -40px var(--darkCharcoal),
+    48px 48px 10px -40px var(--brandColor);
 }
 
 .about .col-left img:hover {
   padding: 0px;
   padding-bottom: 7px;
   padding-right: 7px;
-  box-shadow: -48px -48px 10px -40px var(--darkCharcoal), 48px 48px 0 -40px var(--brandColor);
+  box-shadow: -48px -48px 10px -40px var(--darkCharcoal),
+    48px 48px 0 -40px var(--brandColor);
 }
 
 .about .col-right h2 {
@@ -35,6 +37,24 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
+}
+
+.competence {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.competence h2 {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.competence .col-left,
+.competence .col-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 1rem;
 }
 
 .about .row.two .item {
