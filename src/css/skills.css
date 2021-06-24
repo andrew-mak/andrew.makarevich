@@ -1,5 +1,6 @@
 /* Skills */
-.tech {
+.tech-stack {
+  padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -7,7 +8,7 @@
   background: var(--lightBackg);
 }
 
-.tech .item {
+.tech-stack .item {
   min-width: 240px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -16,7 +17,7 @@
   align-items: center;
 }
 
-.tech img {
+.tech-stack img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 6px;
@@ -27,64 +28,62 @@
   filter: drop-shadow(0px 0px 2px #222);
 }
 
-.tech img:hover {
+.tech-stack img:hover {
   cursor: default;
   transition: all 0.5s ease-in-out 0s;
   transform: rotateY(360deg);
 }
 
-.tech .item:nth-child(5) img:hover,
-.tech .item:nth-child(6) img:hover {
+.tech-stack .item:nth-child(5) img:hover,
+.tech-stack .item:nth-child(6) img:hover {
   transform: rotate(360deg);
 }
 
-.tech .item h3:hover {
+.tech-stack .item h3:hover {
   cursor: default;
   text-shadow: 1px 1px 4px var(--brandColor);
-}
-
-.skills .row.two {
-  background: var(--lightBackg);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  text-align: center;
 }
 
 .skills .img {
   width: auto;
 }
 
-.skills .row.two .item {
-  padding: 1.5rem;
-  margin: 0.5rem 0;
+.competence {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background: var(--lightBackg);
+  text-align: center;
 }
 
-.skills .row.two .item h2 {
-  font-size: 1.6rem;
-  margin-bottom: 40px;
-}
-
-.progress-bar {
-  margin: 0.5rem 0;
+.competence .wrapper {
   width: 100%;
-  height: 1rem;
-  background: #000;
-  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.progress-move {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  transition: width 4s linear 1s;
+.competence h3 {
+  align-self: center;
+  margin-bottom: 1rem;
 }
 
-.progress-bar h3 {
-  font-size: 14px;
-  position: absolute;
-  top: -33px;
-  width: 100%;
-  padding-left: 0;
+.competence .technologies,
+.competence .tools {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem; 
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.competence .tools {
+  width: 21.5rem;
+}
+
+.competence li {
+  white-space: pre-wrap;
 }

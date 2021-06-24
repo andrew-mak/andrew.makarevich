@@ -70,6 +70,11 @@ body {
   cursor: pointer;
 }
 
+.far.fa-check-square {
+  margin-right: 0.75rem;
+  margin-left: -25px;
+}
+
 .hidePreloader {
   display: none;
 }
@@ -79,6 +84,7 @@ img {
   width: 100%;
   display: block;
 }
+
 a {
   text-decoration: none;
 }
@@ -86,20 +92,24 @@ a {
 li {
   list-style-type: none;
 }
+
 button {
   outline: 0;
   cursor: pointer;
 }
+
 .container {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .py-5 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
 .text {
   font-size: 0.95rem;
   color: var(--darkCharcoal);
@@ -108,18 +118,45 @@ button {
   line-height: 1.6;
 }
 
+.competence h2,
+.education h2 {
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 600px) {
   .greeting-text {
     font-size: 5rem;
   }
+
   .greeting-text#typeEffect {
     min-height: 240px;
   }
-  .tech .item {
+
+  .about .photo {
+    width: 50%;
+  }
+
+  .education .tech-stack .item {
     min-width: 220px;
   }
-  .portfolio .container {
+
+  .education .edu-other {
+    padding-left: 9rem;
+  }
+
+  .fas.fa-graduation-cap {
+    display: block;
+    font-size: 4rem;
+    color: #333333;
+    margin: 1rem;
+    margin-right: 3rem;
+  }
+
+  .portfolio .projects {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -127,10 +164,6 @@ button {
   .portfolio .project {
     width: 56%;
     margin: 2rem 1rem;
-  }
-
-  .about .col-left img {
-    width: 50%;
   }
 
   .contacts .item:first-of-type {
@@ -148,6 +181,7 @@ button {
     align-items: center;
     justify-content: space-between;
   }
+
   .navbar-toggler {
     display: none;
   }
@@ -167,51 +201,33 @@ button {
     margin: 0 1rem;
   }
 
-  .navbar-logo {
-    margin: 0;
-    box-shadow: none;
-  }
-
-  .about .row.two .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .competence {
+    justify-content: center;
   }
 
   .portfolio .project {
     width: 40%;
   }
-
-  .skills .row.two .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media screen and (min-width: 992px) {
-  .about .row.one {
+  .about-intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
   }
 
-  .about .col-left img {
-    width: 75%;
+  .about .photo {
+    width: 70%;
   }
 
-  .about .col-right h2 {
-    padding-top: 0;
+  .education .wrapper {
+    margin: auto 0;
+    margin-left: 5%;
   }
 
-  .about .row.two .container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .about .row.two .item .text {
-    width: 100%;
-  }
-
-  .tech .item {
+  .tech-stack .item {
     min-width: 240px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -219,12 +235,13 @@ button {
 
   .portfolio .project {
     width: 30%;
-    max-width: 400px;
+    max-width: 320px;
   }
 
   .contacts {
     width: 60%;
   }
+
   .contact-form div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -233,7 +250,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .tech .item {
+  .tech-stack .item {
     min-width: 180px;
   }
 }

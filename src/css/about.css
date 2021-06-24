@@ -1,11 +1,11 @@
-.about .row.one {
+.about-intro {
   margin-bottom: 4rem;
 }
 
-.about .col-left img {
+.about .photo {
   width: 90%;
   margin: auto;
-  max-width: 450px;
+  max-width: 320px;
   padding: 7px;
   padding-bottom: 0;
   padding-right: 0;
@@ -13,7 +13,7 @@
     48px 48px 10px -40px var(--brandColor);
 }
 
-.about .col-left img:hover {
+.about .photo:hover {
   padding: 0px;
   padding-bottom: 7px;
   padding-right: 7px;
@@ -21,65 +21,81 @@
     48px 48px 0 -40px var(--brandColor);
 }
 
-.about .col-right h2 {
-  padding: 2rem 0 0 0;
-  font-size: 1.8rem;
-  font-weight: 600;
-  font-family: var(--largeFont);
-}
-
-.about .col-right .text {
-  padding: 0.4rem 0;
-}
-
-.about .row.two {
-  background: var(--lightBackg);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  text-align: center;
-}
-
-.competence {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.competence h2 {
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
-.competence .col-left,
-.competence .col-right {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.about .introduce {
   padding: 0 1rem;
 }
 
-.about .row.two .item {
-  padding: 1.5rem;
-  margin: 0.5rem 0;
+.about .introduce h2 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.about .row.two .item span {
-  font-size: 2rem;
+.about .introduce .text {
+  padding: 0.4rem 0;
+  text-align: justify;
+  font-size: 1.05rem;
 }
 
-.about .row.two .item h3 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1rem;
+.about .introduce .text b { 
+  background-color: #fffaa9;
 }
 
-.about .row.two .item .text {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+.about .introduce span {
+  background-color: #a9eeff;
+  font-weight: 500;
 }
 
-.about.py-5 {
-  padding-bottom: 0;
+.education.container {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: var(--lightBackg);
+}
+
+.education .wrapper {
+  margin: auto;
+}
+
+.education p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.education p span {
+  margin: 0.3rem 0;
+}
+
+.education .bachelor p {
+  word-spacing: 4px;
+}
+
+.education .date {
+  color: #5e5e5e;
+}
+
+.bachelor {
+  display: flex;
+}
+
+.bachelor span span {
+  font-weight: 500;
+}
+
+.fas.fa-graduation-cap {
+  display: none;
+}
+
+.edu-other h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
 }
 
 @keyframes arrowMovement {

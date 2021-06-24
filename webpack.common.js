@@ -65,7 +65,7 @@ module.exports = {
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[chunkhash:8].css',
+      filename: '[name].css',
       chunkFilename: '[name].css',
     }),
   ],
