@@ -7,7 +7,7 @@ const { merge } = require('webpack-merge');
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "main.[chunkhash:8].js",
+    filename: "main.js",
   },
   optimization: {
     minimizer: [

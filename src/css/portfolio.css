@@ -3,7 +3,9 @@
   flex-direction: column;
 }
 
-.portfolio .container {
+.portfolio .projects {
+  width: 100%;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,6 +13,7 @@
 }
 
 .portfolio .project {
+  max-width: 320px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -32,9 +35,10 @@
   text-align-last: center;
   color: #fff;
 }
+
 .portfolio .item::after {
   position: absolute;
-  background: #333333fa;
+  background: var(--darkCharcoal);
   content: "";
   left: 50%;
   top: 50%;
@@ -79,10 +83,6 @@
   color: #fff;
 }
 
-.portfolio .item .sub-item i {
-  margin: 0 0.75rem;
-}
-
 .portfolio .item .sub-item ul {
   padding-left: 25px;
 }
@@ -90,6 +90,11 @@
 .portfolio .item .sub-item ul i {
   margin-right: 0.75rem;
   margin-left: -25px;
+}
+
+.fab.fa-github,
+.fa-external-link-alt {
+  margin: 0 0.75rem;
 }
 
 .portfolio .item:hover::after {

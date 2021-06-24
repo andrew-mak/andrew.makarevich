@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.ico" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Personal webpage">
+  <meta name="author" content="Andrei Makarevich">
+  <meta name="description" content="This is my personal webpage.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -44,7 +45,7 @@
       }
     }
   </style>
-  <script defer>window.addEventListener('load', () => {
+  <script>window.addEventListener('load', () => {
       document.querySelector('.preloader').classList.add("hidePreloader");
       document.body.style.overflow = "visible";
     });
@@ -63,7 +64,7 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-logo">
-        <a href="index.html" class="navbar-brand">Andrew Makarevich</a>
+        <a href="index.html" class="navbar-label">Andrei Makarevich</a>
         <button type="button" class="navbar-toggler">
           <i class="fas fa-bars"></i>
         </button>
@@ -92,7 +93,7 @@
   </nav>
 
   <header class="header" id="home">
-    <div class="row">
+    <div class="header-content">
       <p class="greeting-text">Hey there!</p>
       <div class="greeting-text" id="typeEffect"></div>
 
@@ -119,42 +120,44 @@
       <div class="hoz-line"></div>
     </div>
 
-    <div class="row one container">
-      <div class="col-left">
-        <img src="./assets/img/me.jpg" alt="about image">
+    <div class="about-intro container">
+      <div class="photo">
+        <img src="./assets/img/me.jpg" alt="author image" width="50">
       </div>
 
-      <div class="col-right">
+      <div class="introduce">
         <h2>Who I am</h2>
-        <p class="text">Hi everyone! I am Andrei Makarevich. This is my website. Now I'm looking position for junior
-          frontend developer. I focused on building clean, user-friendly experiences.</p>
-        <p class="text">I am a self-taught frontend developer. I have a serious passion for
-          writing clean, efficient code. I began my coding journey in early 2020. Now I consider myself fluent in HTML5,
-          CSS3, and skilled in JavaScript ES6+ and ReactJS.</p>
-
+        <p class="text">Hi everyone! I am Andrei Makarevich. This is my website. Currently I'm <b>looking for junior
+            frontend developer position</b>.</p>
+        <p class="text">I am a self-taught frontend developer. I have a serious passion for writing clean, efficient
+          code and focused on building clean, user-friendly experiences. I began my coding journey in early 2020. Now I
+          consider myself fluent in <span>HTML5</span>, <span>CSS3</span>, and skilled in <span>JavaScript ES6+</span>
+          and <span>ReactJS</span>.</p>
+        <p class="text">In addition, I have a great desire to develop, try new technologies and implement it with the
+          best practices. I will be glad to join strong and friendly team and contribute to an interesting project!</p>
       </div>
     </div>
-    <div class="competence row two container">
-      <h2>Competence</h2>
-      <div class="col-left">
-        <h3>Frontend technologies:</h3>
-        <ul>
-          <li>HTML5/CSS3</li>
-          <li>JavaScript/ECMAScript 2015+/TypeScript</li>
-          <li>React/Redux/Router</li>
-          <li>GraphQL</li>
-        </ul>
-      </div>
 
-      <div class="col-right">
-        <h3>Software and tools:</h3>
-        <ul>
-          <li>webpack</li>
-          <li>Git VC</li>
-          <li>VSCode</li>
-          <li>npm/yarn</li>
-          <li>Photoshop CC/Avocode</li>
-        </ul>
+    <div class="education container">
+      <h2>Education</h2>
+      <div class="wrapper">
+        <div class="bachelor"><i class="fas fa-graduation-cap"></i>
+          <p>
+            <span><b>Belarusian State University of Informatics and Radioelectronics</b></span>
+            <span><span>Bachelor's degree</span>, Information Technologies and Control in Engineering</span>
+            <span class="date">2010-2015</span>
+          </p>
+        </div>
+
+        <div class="edu-other">
+          <h3>Other</h3>
+          <p>
+            <span><b>Streamline school</b></span>
+            <span>English Express-course</span>
+            <span><i>Certified at level B1</i></span>
+            <span class="date">September 2017 - May 2018</span>
+          </p>
+        </div>
       </div>
 
     </div>
@@ -165,7 +168,7 @@
       <h2>My key skills</h2>
       <div class="hoz-line"></div>
     </div>
-    <div class="tech">
+    <div class="tech-stack container">
 
       <div class="item">
         <img src="./assets/img/html.png" alt="HTML logo" />
@@ -197,6 +200,32 @@
         <h3>Graphql</h3>
       </div>
     </div>
+    <div class="competence container">
+      <h2>Competence</h2>
+      <div class="wrapper">
+        <div class="technologies">
+          <h3>Frontend technologies:</h3>
+          <ul>
+            <li><i class="far fa-check-square"></i>HTML5/CSS3</li>
+            <li><i class="far fa-check-square"></i>JavaScript/ECMAScript 2015+/TypeScript</li>
+            <li><i class="far fa-check-square"></i>React/Redux/Router</li>
+            <li><i class="far fa-check-square"></i>GraphQL</li>
+          </ul>
+        </div>
+
+        <div class="tools">
+          <h3>Software and tools:</h3>
+          <ul>
+            <li><i class="far fa-check-square"></i>webpack</li>
+            <li><i class="far fa-check-square"></i>Git VC</li>
+            <li><i class="far fa-check-square"></i>VSCode</li>
+            <li><i class="far fa-check-square"></i>npm/yarn</li>
+            <li><i class="far fa-check-square"></i>Photoshop CC/Avocode</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <section class="portfolio py-5" id="portfolio">
@@ -205,7 +234,7 @@
       <div class="hoz-line"></div>
     </div>
 
-    <div class="container">
+    <div class="projects container">
 
       <div class="project">
         <div class="item">
@@ -335,7 +364,7 @@
     </h3>
     <form class="contact-form" action="https://formspree.io/f/xjvjwqgb" method="POST">
       <div>
-        <input type="text" class="form-control" placeholder="Name" name="name">
+        <input type="text" name="name" class="form-control" placeholder="Name">
         <input type="email" name="_replyto" class="form-control" placeholder="Email">
       </div>
       <textarea rows="7" placeholder="Message" name="message"></textarea>

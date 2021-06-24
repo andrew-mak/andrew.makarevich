@@ -8,19 +8,22 @@
   box-shadow: 0px 2px 8px var(--brandColor);
   display: none;
 }
+
 .navbar-logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 42px;
 }
-.navbar-brand {
+
+.navbar-label{
   color: #fff;
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
   word-spacing: 7px;
 }
+
 .navbar-toggler {
   background: none;
   border: none;
@@ -28,18 +31,22 @@
   color: var(--lightBackg);
   transition: var(--transition);
 }
+
 .navbar-toggler:hover {
   opacity: 0.9;
   color: var(--brandColor);
 }
+
 .navbar-items {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
+
 .navbar-ul {
   text-align: center;
 }
+
 .nav-item {
   padding: 12px 0;
 }
@@ -49,9 +56,11 @@
   text-transform: uppercase;
   transition: var(--transition);
 }
+
 .nav-link:hover {
   color: var(--brandColor);
 }
+
 .toggleNav {
   padding: 1rem 0;
   height: 286px;
@@ -62,7 +71,8 @@
     url(../assets/img/banner-img.jpg) center/cover no-repeat fixed;
   height: 100vh;
 }
-.header .row {
+
+.header .header-content {
   height: 100%;
   display: grid;
   place-items: center;
