@@ -59,3 +59,18 @@ window.addEventListener('scroll', () => {
     navbar.style.display = 'none';
   }
 });
+
+window.addEventListener('load', async () => {
+  const d = new Date().toJSON();
+  await fetch(`https://hireme-26b78-default-rtdb.firebaseio.com/${d.slice(0, 10)}/${d.slice(11, 19)}.json`, {
+    method: 'POST',
+    body: JSON.stringify({
+      date: new Date().toUTCString(),
+      userAgent: window.navigator.userAgent,
+      langs: window.navigator.languages,
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+});
